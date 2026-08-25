@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { buildMetadata, organizationSchema, websiteSchema } from '@/lib/seo'
+import { CrossDomainLink } from '@/components/CrossDomainLink'
 
 export const metadata = buildMetadata({
   title: 'Modern Trades -- Contractor Growth & Operations',
@@ -31,7 +32,7 @@ export default function HomePage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href="/resources" className="btn-primary">Browse Resources</Link>
-              <a href="https://www.moderntradescrm.com" className="btn-outline-visible !text-white !border-white/40">See Modern Trades CRM</a>
+              <CrossDomainLink href="https://www.moderntradescrm.com" sourceTool="homepage-hero" className="btn-outline-visible !text-white !border-white/40">See Modern Trades CRM</CrossDomainLink>
             </div>
           </div>
           <div className="relative flex justify-center">
@@ -74,7 +75,7 @@ export default function HomePage() {
             true, <a href="https://www.moderntradescrm.com" className="text-brand-electric underline">Modern Trades CRM</a>{' '}
             is the product built for it -- a SubZeroMetrix LLC affiliate, disclosed wherever it&apos;s mentioned.
           </p>
-          <a href="https://www.moderntradescrm.com" className="btn-secondary">See Modern Trades CRM</a>
+          <CrossDomainLink href="https://www.moderntradescrm.com" sourceTool="homepage-closing-cta" className="btn-secondary">See Modern Trades CRM</CrossDomainLink>
         </div>
       </section>
     </div>

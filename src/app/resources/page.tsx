@@ -16,6 +16,7 @@ const GUIDES = [
   { href: '/resources/customer-reactivation', title: 'Customer Reactivation', description: 'Why past customers are usually the cheapest revenue available, and how to find who has gone quiet.' },
   { href: '/resources/estimate-follow-up', title: 'Estimate Follow-Up', description: 'A minimum system for tracking open estimates so they close or get a clear reason for loss.' },
   { href: '/resources/reporting-and-attribution', title: 'Reporting & Attribution', description: 'The minimum fields needed to know which marketing channel actually produces jobs.' },
+  { href: '/resources/ai-assistant-readiness', title: 'AI Assistant Readiness', description: 'What has to be true before an AI assistant can safely handle a customer conversation.' },
 ]
 
 export default function ResourcesPage() {

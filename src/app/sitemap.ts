@@ -13,7 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/tools/missed-call-response-map', '/tools/estimate-follow-up-planner',
     '/tools/customer-reactivation-planner', '/tools/ai-assistant-readiness',
     '/tools/phone-sms-readiness', '/tools/workflow-mapping', '/tools/crm-implementation-prep',
-    '/newsletter', '/about', '/contact', '/privacy', '/terms',
+    '/newsletter', '/about', '/contact', '/privacy', '/terms', '/ownership-disclosure',
   ]
 
   return staticRoutes.map((route) => ({

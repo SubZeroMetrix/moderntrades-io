@@ -183,3 +183,21 @@
     @apply bg-white shadow-panel-xl rounded-2xl border border-surface-border;
   }
 }
+
+@media print {
+  header, footer, .no-print, .skip-link {
+    display: none !important;
+  }
+  body {
+    background: #fff !important;
+    color: #000 !important;
+  }
+  a[href]:after {
+    content: '';
+  }
+  .card-panel {
+    border: 1px solid #ccc !important;
+    box-shadow: none !important;
+    break-inside: avoid;
+  }
+}

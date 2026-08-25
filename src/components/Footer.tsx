@@ -19,6 +19,7 @@ export function Footer() {
               <li><Link href="/resources/crm-readiness" className="hover:text-white transition-colors">CRM Readiness</Link></li>
               <li><Link href="/resources/revenue-recovery" className="hover:text-white transition-colors">Revenue Recovery</Link></li>
               <li><Link href="/resources/automation-readiness" className="hover:text-white transition-colors">Automation Readiness</Link></li>
+              <li><Link href="/tools" className="hover:text-white transition-colors">All Tools</Link></li>
             </ul>
           </div>
           <div>

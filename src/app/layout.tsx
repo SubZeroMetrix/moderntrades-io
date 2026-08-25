@@ -5,10 +5,13 @@ import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import { buildMetadata } from '@/lib/seo'
 
-export const metadata: Metadata = buildMetadata({
-  title: 'Modern Trades -- Contractor Growth & Operations',
-  description: 'A national publication on contractor lead response, follow-up, automation, and operational AI -- practical, not generic.',
-})
+export const metadata: Metadata = {
+  ...buildMetadata({
+    title: 'Modern Trades -- Contractor Growth & Operations',
+    description: 'A national publication on contractor lead response, follow-up, automation, and operational AI -- practical, not generic.',
+  }),
+  other: { 'msvalidate.01': 'ED3E0E42CACAB84B496D06CE30344926' },
+}
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (

@@ -17,6 +17,7 @@ const GUIDES = [
   { href: '/resources/estimate-follow-up', title: 'Estimate Follow-Up', description: 'A minimum system for tracking open estimates so they close or get a clear reason for loss.' },
   { href: '/resources/reporting-and-attribution', title: 'Reporting & Attribution', description: 'The minimum fields needed to know which marketing channel actually produces jobs.' },
   { href: '/resources/ai-assistant-readiness', title: 'AI Assistant Readiness', description: 'What has to be true before an AI assistant can safely handle a customer conversation.' },
+  { href: '/resources/software-buying-guide', title: 'Software Buying Guide', description: 'Vendor-neutral questions to ask before buying any contractor software, including ours.' },
 ]
 
 export default function ResourcesPage() {

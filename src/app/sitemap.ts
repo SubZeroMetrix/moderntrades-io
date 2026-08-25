@@ -8,7 +8,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '', '/resources', '/resources/crm-readiness', '/resources/revenue-recovery',
     '/resources/automation-readiness', '/resources/phone-and-sms-readiness',
     '/resources/customer-reactivation', '/resources/estimate-follow-up', '/resources/reporting-and-attribution',
-    '/resources/ai-assistant-readiness',
+    '/resources/ai-assistant-readiness', '/resources/software-buying-guide',
     '/newsletter', '/about', '/contact', '/privacy', '/terms',
   ]
 

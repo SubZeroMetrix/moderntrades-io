@@ -19,6 +19,13 @@ const GUIDES = [
   { href: '/resources/reporting-and-attribution', title: 'Reporting & Attribution', description: 'The minimum fields needed to know which marketing channel actually produces jobs.' },
   { href: '/resources/ai-assistant-readiness', title: 'AI Assistant Readiness', description: 'What has to be true before an AI assistant can safely handle a customer conversation.' },
   { href: '/resources/software-buying-guide', title: 'Software Buying Guide', description: 'Vendor-neutral questions to ask before buying any contractor software, including ours.' },
+  { href: '/resources/speed-to-lead', title: 'Speed-to-Lead', description: 'Why response time predicts who wins the job, and how to measure your own honestly.' },
+  { href: '/resources/missed-call-recovery', title: 'Missed-Call Recovery', description: 'What happens to a missed call, and a practical system for recovering it.' },
+  { href: '/resources/review-request-systems', title: 'Review Request Systems', description: 'Why review recency matters more than count, and the FTC rules that govern how you can ask.' },
+  { href: '/resources/referral-workflows', title: 'Referral Workflows', description: 'Why referrals are the cheapest lead source and usually the least systematized.' },
+  { href: '/resources/scheduling-readiness', title: 'Scheduling Readiness', description: 'What has to be true before a shared calendar actually helps.' },
+  { href: '/resources/crm-migration-planning', title: 'CRM Migration Planning', description: 'What actually breaks during a CRM switch, and how to avoid double-messaging customers.' },
+  { href: '/resources/owner-dashboards', title: 'Owner Dashboards', description: 'Designing a dashboard around decisions you actually make, not vanity metrics.' },
 ]
 
 export default function ResourcesPage() {

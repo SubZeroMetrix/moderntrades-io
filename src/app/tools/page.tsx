@@ -18,6 +18,9 @@ const TOOLS = [
   { href: '/tools/phone-sms-readiness', title: 'Phone & SMS Compliance Checklist', description: 'What TCPA/FCC rules require before texting or auto-dialing customers.' },
   { href: '/tools/workflow-mapping', title: 'Workflow Mapping Worksheet', description: 'Test whether a specific process is consistent enough to automate.' },
   { href: '/tools/crm-implementation-prep', title: 'CRM Implementation Preparation Checklist', description: 'What to prepare before CRM implementation starts.' },
+  { href: '/tools/lead-response-cost-calculator', title: 'Lead Response Cost Calculator', description: 'What slow response is roughly costing you, from your own numbers.' },
+  { href: '/tools/crm-migration-checklist', title: 'CRM Migration Checklist', description: 'Check if you\'re ready to switch CRM systems without losing data.' },
+  { href: '/tools/owner-dashboard-planner', title: 'Owner Dashboard Planner', description: 'See if your current numbers answer the decisions you actually make.' },
 ]
 
 export default function ToolsPage() {
@@ -30,7 +33,7 @@ export default function ToolsPage() {
       <PageHeader
         eyebrow="Tools"
         title="Free Interactive Tools"
-        description="Nine checklists and worksheets, all free, all with an immediate result, none requiring an email. Everything runs in your browser -- nothing you enter is sent anywhere."
+        description="Twelve checklists and worksheets, all free, all with an immediate result, none requiring an email. Everything runs in your browser -- nothing you enter is sent anywhere."
         breadcrumb={[{ name: 'Home', href: '/' }, { name: 'Tools', href: '/tools' }]}
       />
       <div className="section-container max-w-4xl py-16">

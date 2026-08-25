@@ -18,7 +18,7 @@ export interface WorksheetResult {
 
 // Declarative formula id instead of a function prop -- functions can't cross
 // the server/client component boundary in the App Router.
-export type WorksheetFormula = 'missed-call-exposure' | 'stalled-estimate-value' | 'dormant-customer-value'
+export type WorksheetFormula = 'missed-call-exposure' | 'stalled-estimate-value' | 'dormant-customer-value' | 'lead-response-cost'
 
 const FORMULAS: Record<WorksheetFormula, (v: Record<string, number>) => WorksheetResult> = {
   'missed-call-exposure': (v) => {
@@ -46,6 +46,22 @@ const FORMULAS: Record<WorksheetFormula, (v: Record<string, number>) => Workshee
         { label: `x conservative recovery rate (${v.recoveryRate}%)`, value: recovered.toFixed(1) },
         { label: 'x average job value', value: `$${v.avgJobValue.toLocaleString()}` },
         { label: 'Estimated recoverable value', value: `$${value.toLocaleString(undefined, { maximumFractionDigits: 0 })}` },
+      ],
+    }
+  },
+  'lead-response-cost': (v) => {
+    const slowLeads = v.leadsPerMonth * (v.slowResponsePct / 100)
+    const lostFromSlow = slowLeads * (v.lossRateOnSlow / 100)
+    const value = lostFromSlow * v.avgJobValue
+    return {
+      headline: `$${value.toLocaleString(undefined, { maximumFractionDigits: 0 })} rough monthly cost of slow response`,
+      detail: 'Based on research showing response speed strongly predicts win rate (see the Speed-to-Lead guide). This is a floor estimate using your own numbers, not a guarantee.',
+      breakdown: [
+        { label: 'Leads per month', value: v.leadsPerMonth.toLocaleString() },
+        { label: `x % responded to slowly (over 1 hour)`, value: `${slowLeads.toFixed(1)} (${v.slowResponsePct}%)` },
+        { label: `x estimated loss rate on slow-responded leads (${v.lossRateOnSlow}%)`, value: lostFromSlow.toFixed(1) },
+        { label: 'x average job value', value: `$${v.avgJobValue.toLocaleString()}` },
+        { label: 'Rough monthly cost', value: `$${value.toLocaleString(undefined, { maximumFractionDigits: 0 })}` },
       ],
     }
   },

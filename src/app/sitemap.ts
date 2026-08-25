@@ -9,10 +9,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/resources/automation-readiness', '/resources/phone-and-sms-readiness',
     '/resources/customer-reactivation', '/resources/estimate-follow-up', '/resources/reporting-and-attribution',
     '/resources/ai-assistant-readiness', '/resources/software-buying-guide',
+    '/resources/speed-to-lead', '/resources/missed-call-recovery', '/resources/review-request-systems',
+    '/resources/referral-workflows', '/resources/scheduling-readiness', '/resources/crm-migration-planning',
+    '/resources/owner-dashboards',
     '/tools', '/tools/crm-readiness-checklist', '/tools/revenue-recovery-worksheet',
     '/tools/missed-call-response-map', '/tools/estimate-follow-up-planner',
     '/tools/customer-reactivation-planner', '/tools/ai-assistant-readiness',
     '/tools/phone-sms-readiness', '/tools/workflow-mapping', '/tools/crm-implementation-prep',
+    '/tools/lead-response-cost-calculator', '/tools/crm-migration-checklist', '/tools/owner-dashboard-planner',
     '/newsletter', '/about', '/contact', '/privacy', '/terms', '/ownership-disclosure',
   ]
 

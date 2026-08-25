@@ -14,6 +14,7 @@ const GUIDES = [
   { href: '/resources/automation-readiness', title: 'Automation Readiness', description: 'What to automate first, what to keep manual, and how to tell the difference.' },
   { href: '/resources/phone-and-sms-readiness', title: 'Phone & SMS Readiness', description: 'What TCPA and FCC consent rules actually require before you text or auto-dial customers.' },
   { href: '/resources/customer-reactivation', title: 'Customer Reactivation', description: 'Why past customers are usually the cheapest revenue available, and how to find who has gone quiet.' },
+  { href: '/resources/estimate-follow-up', title: 'Estimate Follow-Up', description: 'A minimum system for tracking open estimates so they close or get a clear reason for loss.' },
 ]
 
 export default function ResourcesPage() {

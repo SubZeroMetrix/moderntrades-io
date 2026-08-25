@@ -7,7 +7,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes = [
     '', '/resources', '/resources/crm-readiness', '/resources/revenue-recovery',
     '/resources/automation-readiness', '/resources/phone-and-sms-readiness',
-    '/resources/customer-reactivation',
+    '/resources/customer-reactivation', '/resources/estimate-follow-up',
     '/newsletter', '/about', '/contact', '/privacy', '/terms',
   ]
 

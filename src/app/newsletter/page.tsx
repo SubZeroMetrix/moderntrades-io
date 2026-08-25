@@ -24,7 +24,7 @@ export default function NewsletterPage() {
         <div className="card-panel">
           <a href="https://www.subzerometrix.com/newsletter" className="btn-primary inline-block">Go to Newsletter Sign-Up</a>
         </div>
-        <p className="text-xs text-gray-400 mt-6">
+        <p className="text-xs text-gray-500 mt-6">
           Preference management and unsubscribe are also handled there, on the shared preference center.
         </p>
       </div>

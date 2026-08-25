@@ -93,7 +93,7 @@ export function WorksheetTool({
         </div>
 
         <div className="card-panel">
-          <p className="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-3">How this was calculated</p>
+          <p className="text-xs font-semibold uppercase tracking-wider text-gray-500 mb-3">How this was calculated</p>
           <table className="w-full text-sm border-collapse">
             <tbody>
               {result.breakdown.map((row) => (
@@ -104,7 +104,7 @@ export function WorksheetTool({
               ))}
             </tbody>
           </table>
-          <p className="text-xs text-gray-400 mt-4">{methodNote} All numbers you entered stay in your browser -- nothing is sent anywhere.</p>
+          <p className="text-xs text-gray-500 mt-4">{methodNote} All numbers you entered stay in your browser -- nothing is sent anywhere.</p>
         </div>
 
         <div className="flex flex-wrap gap-3 no-print">
@@ -134,7 +134,7 @@ export function WorksheetTool({
               />
               {f.suffix && <span className="text-sm text-gray-500">{f.suffix}</span>}
             </div>
-            {f.defaultHint && <p id={`${f.id}-hint`} className="text-xs text-gray-400 mt-1">{f.defaultHint}</p>}
+            {f.defaultHint && <p id={`${f.id}-hint`} className="text-xs text-gray-500 mt-1">{f.defaultHint}</p>}
           </div>
         ))}
       </div>

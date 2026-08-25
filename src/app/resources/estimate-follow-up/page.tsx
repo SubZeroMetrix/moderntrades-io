@@ -86,7 +86,7 @@ export default function EstimateFollowUpPage() {
           </p>
           <Link href="/resources" className="text-brand-electric underline">&larr; All resources</Link>
         </div>
-        <p className="text-xs text-gray-400 mt-8">Last reviewed 2026-08-25.</p>
+        <p className="text-xs text-gray-500 mt-8">Last reviewed 2026-08-25.</p>
       </div>
     </div>
   )

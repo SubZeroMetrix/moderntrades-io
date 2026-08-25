@@ -71,7 +71,7 @@ export default function ContractorGrowthSystemPage() {
           <p className="text-gray-700 mb-4">Find your weakest stage in under two minutes.</p>
           <a href="https://www.metrixaudit.com/audit" className="btn-primary">Take the Free Audit</a>
         </div>
-        <p className="text-xs text-gray-400 mt-8">Last reviewed 2026-08-25.</p>
+        <p className="text-xs text-gray-500 mt-8">Last reviewed 2026-08-25.</p>
       </div>
     </div>
   )

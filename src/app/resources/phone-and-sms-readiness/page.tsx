@@ -116,7 +116,7 @@ export default function PhoneSmsReadinessPage() {
           <Link href="/resources" className="text-brand-electric underline">&larr; All resources</Link>
         </div>
 
-        <p className="text-xs text-gray-400 mt-8">Last reviewed 2026-08-25. Educational content, not legal advice.</p>
+        <p className="text-xs text-gray-500 mt-8">Last reviewed 2026-08-25. Educational content, not legal advice.</p>
       </div>
     </div>
   )

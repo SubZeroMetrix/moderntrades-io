@@ -45,7 +45,7 @@ export function ChecklistTool({
 
         {noItems.length > 0 && (
           <div className="card-panel">
-            <p className="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-3">Gaps and next actions</p>
+            <p className="text-xs font-semibold uppercase tracking-wider text-gray-500 mb-3">Gaps and next actions</p>
             <ul className="space-y-3">
               {noItems.map((i) => (
                 <li key={i.id} className="text-sm">

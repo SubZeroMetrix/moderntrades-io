@@ -13,7 +13,7 @@ export function Footer() {
             </p>
           </div>
           <div>
-            <p className="text-xs font-semibold uppercase tracking-wider text-gray-500 mb-3">Resources</p>
+            <p className="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-3">Resources</p>
             <ul className="space-y-2 text-sm">
               <li><Link href="/resources" className="hover:text-white transition-colors">All Resources</Link></li>
               <li><Link href="/resources/crm-readiness" className="hover:text-white transition-colors">CRM Readiness</Link></li>
@@ -23,7 +23,7 @@ export function Footer() {
             </ul>
           </div>
           <div>
-            <p className="text-xs font-semibold uppercase tracking-wider text-gray-500 mb-3">Legal</p>
+            <p className="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-3">Legal</p>
             <ul className="space-y-2 text-sm">
               <li><Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link></li>
               <li><Link href="/terms" className="hover:text-white transition-colors">Terms of Use</Link></li>
@@ -32,7 +32,7 @@ export function Footer() {
             </ul>
           </div>
         </div>
-        <p className="text-xs text-gray-600 border-t border-white/10 pt-6">&copy; {new Date().getFullYear()} SubZeroMetrix LLC.</p>
+        <p className="text-xs text-gray-400 border-t border-white/10 pt-6">&copy; {new Date().getFullYear()} SubZeroMetrix LLC.</p>
       </div>
     </footer>
   )

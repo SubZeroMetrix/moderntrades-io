@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { buildMetadata, organizationSchema, breadcrumbSchema } from '@/lib/seo'
+import { PageHeader } from '@/components/PageHeader'
 
 export const metadata = buildMetadata({
   title: 'Resources',
@@ -17,15 +18,15 @@ export default function ResourcesPage() {
   const breadcrumb = breadcrumbSchema([{ name: 'Home', url: '/' }, { name: 'Resources', url: '/resources' }])
 
   return (
-    <div className="py-20">
+    <div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema()) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
-      <div className="section-container max-w-4xl">
-        <p className="text-label text-brand-electric mb-3">Resources</p>
-        <h1 className="text-headline text-gray-900 mb-10">Contractor Growth & Operations Guides</h1>
+      <PageHeader eyebrow="Resources" title="Contractor Growth & Operations Guides" breadcrumb={[{ name: 'Home', href: '/' }, { name: 'Resources', href: '/resources' }]} />
+      <div className="section-container max-w-4xl py-16">
         <div className="grid sm:grid-cols-3 gap-6">
-          {GUIDES.map((g) => (
+          {GUIDES.map((g, i) => (
             <Link key={g.href} href={g.href} className="card-panel hover:border-brand-electric/30 transition-colors">
+              <p className="text-xs font-semibold text-brand-electric mb-3">{String(i + 1).padStart(2, '0')}</p>
               <h2 className="text-lg font-bold text-gray-900 mb-2">{g.title}</h2>
               <p className="text-sm text-gray-500">{g.description}</p>
             </Link>

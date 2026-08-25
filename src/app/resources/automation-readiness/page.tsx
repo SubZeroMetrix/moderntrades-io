@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { buildMetadata, organizationSchema, breadcrumbSchema, articleSchema } from '@/lib/seo'
+import { PageHeader } from '@/components/PageHeader'
 
 export const metadata = buildMetadata({
   title: 'Automation Readiness for Contractors',
@@ -12,13 +13,12 @@ export default function AutomationReadinessPage() {
   const article = articleSchema({ headline: 'Automation Readiness for Contractors', description: 'What to automate first and what to keep manual.', path: '/resources/automation-readiness' })
 
   return (
-    <div className="py-20">
+    <div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema()) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(article) }} />
-      <div className="section-container max-w-3xl">
-        <p className="text-label text-brand-electric mb-3">Resources</p>
-        <h1 className="text-headline text-gray-900 mb-8">Automation Readiness for Contractors</h1>
+      <PageHeader eyebrow="Resources" title="Automation Readiness for Contractors" breadcrumb={[{ name: 'Home', href: '/' }, { name: 'Resources', href: '/resources' }, { name: 'Automation Readiness', href: '/resources/automation-readiness' }]} />
+      <div className="section-container max-w-3xl py-16">
         <div className="prose-content">
           <p>
             Automation works well on repetitive, well-defined tasks and fails badly on judgment calls. Getting that

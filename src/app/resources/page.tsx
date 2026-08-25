@@ -15,6 +15,7 @@ const GUIDES = [
   { href: '/resources/phone-and-sms-readiness', title: 'Phone & SMS Readiness', description: 'What TCPA and FCC consent rules actually require before you text or auto-dial customers.' },
   { href: '/resources/customer-reactivation', title: 'Customer Reactivation', description: 'Why past customers are usually the cheapest revenue available, and how to find who has gone quiet.' },
   { href: '/resources/estimate-follow-up', title: 'Estimate Follow-Up', description: 'A minimum system for tracking open estimates so they close or get a clear reason for loss.' },
+  { href: '/resources/reporting-and-attribution', title: 'Reporting & Attribution', description: 'The minimum fields needed to know which marketing channel actually produces jobs.' },
 ]
 
 export default function ResourcesPage() {

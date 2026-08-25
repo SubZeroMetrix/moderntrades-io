@@ -12,6 +12,7 @@ const GUIDES = [
   { href: '/resources/crm-readiness', title: 'CRM Readiness', description: 'What "ready for a CRM" actually means, and the signs a business is still better off without one.' },
   { href: '/resources/revenue-recovery', title: 'Revenue Recovery', description: 'Missed calls, stalled estimates, and dormant customers -- where contractor revenue actually leaks.' },
   { href: '/resources/automation-readiness', title: 'Automation Readiness', description: 'What to automate first, what to keep manual, and how to tell the difference.' },
+  { href: '/resources/phone-and-sms-readiness', title: 'Phone & SMS Readiness', description: 'What TCPA and FCC consent rules actually require before you text or auto-dial customers.' },
 ]
 
 export default function ResourcesPage() {
